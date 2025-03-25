@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function fetchCharacters() {
-    fetch("http://localhost:3000/characters")
+    fetch("https://flatter-cuties.vercel.app/characters")
       .then(response => response.json())
       .then(characters => {
         const characterBar = document.getElementById("character-bar");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       const newCharacter = { name, image, votes: 0 };
   
-      fetch("http://localhost:3000/characters", {
+      fetch("https://flatter-cuties.vercel.app/characters", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newCharacter)
