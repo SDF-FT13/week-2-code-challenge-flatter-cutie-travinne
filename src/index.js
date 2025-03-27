@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
   
-  function displayCharacterDetails(characters) {
-    document.getElementById("name").textContent = characters.name;
+  function displayCharacterDetails(character) {
+    document.getElementById("name").textContent = character.name;
     document.getElementById("image").src = character.image;
     document.getElementById("vote-count").textContent = character.votes;
     document.getElementById("votes-form").dataset.id = character.id; 
